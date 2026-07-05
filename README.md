@@ -3,7 +3,7 @@
 ## The Business Problem
 ## A bank wants to predict which loan applicants are likely to default before approving their loans. Your job is to build a model that flags high-risk applicants.
 
-### Your Full Project Summary
+### Full Project Summary
 
 ### phases of how i completed this project:
 

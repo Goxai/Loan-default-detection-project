@@ -1,0 +1,16 @@
+vintage_year,zero_balance_code,exit_type,exits
+2021,01,Prepaid/matured,4576
+2021,96,Defect,103
+2021,09,REO disposition,1
+2021,02,Third-party sale,1
+2022,01,Prepaid/matured,4612
+2022,96,Defect,229
+2022,02,Third-party sale,3
+2022,09,REO disposition,2
+2022,03,Short sale/charge-off,1
+2023,01,Prepaid/matured,8983
+2023,96,Defect,201
+2023,09,REO disposition,8
+2023,02,Third-party sale,5
+2023,03,Short sale/charge-off,3
+2023,15,Whole-loan sale,1

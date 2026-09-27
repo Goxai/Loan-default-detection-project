@@ -1,0 +1,335 @@
+{
+  "raw_examples": {
+    "sample_orig_2021.txt": {
+      "field_count": 31
+    },
+    "sample_orig_2022.txt": {
+      "field_count": 31
+    },
+    "sample_orig_2023.txt": {
+      "field_count": 31
+    },
+    "sample_perf_2021.txt": {
+      "field_count": 35
+    },
+    "sample_perf_2022.txt": {
+      "field_count": 35
+    },
+    "sample_perf_2023.txt": {
+      "field_count": 35
+    }
+  },
+  "orig_rows": {
+    "2021": 50000,
+    "2022": 50000,
+    "2023": 50000
+  },
+  "orig_missing": {
+    "2021": {
+      "credit_score": 0,
+      "first_payment": 0,
+      "occupancy": 0,
+      "dti": 0,
+      "original_upb": 0,
+      "ltv": 0,
+      "note_rate": 0,
+      "channel": 0,
+      "state": 0,
+      "loan_id": 0,
+      "term": 0
+    },
+    "2022": {
+      "credit_score": 0,
+      "first_payment": 0,
+      "occupancy": 0,
+      "dti": 0,
+      "original_upb": 0,
+      "ltv": 0,
+      "note_rate": 0,
+      "channel": 0,
+      "state": 0,
+      "loan_id": 0,
+      "term": 0
+    },
+    "2023": {
+      "credit_score": 0,
+      "first_payment": 0,
+      "occupancy": 0,
+      "dti": 0,
+      "original_upb": 0,
+      "ltv": 0,
+      "note_rate": 0,
+      "channel": 0,
+      "state": 0,
+      "loan_id": 0,
+      "term": 0
+    }
+  },
+  "orig_sentinels": {
+    "2021": {
+      "credit_score_9999": 7,
+      "dti_999": 8,
+      "ltv_999": 0
+    },
+    "2022": {
+      "credit_score_9999": 8,
+      "dti_999": 3,
+      "ltv_999": 0
+    },
+    "2023": {
+      "credit_score_9999": 17,
+      "dti_999": 3,
+      "ltv_999": 0
+    }
+  },
+  "orig_invalid": {
+    "2021": {
+      "score_outside_300_850_except_sentinel": 0,
+      "dti_outside_1_65_except_sentinel": 0,
+      "ltv_outside_1_998_except_sentinel": 0,
+      "upb_nonpositive": 0,
+      "first_payment_bad_date": 0,
+      "loan_id_year_mismatch": 0,
+      "first_payment_after_24m_eligibility": 0
+    },
+    "2022": {
+      "score_outside_300_850_except_sentinel": 0,
+      "dti_outside_1_65_except_sentinel": 0,
+      "ltv_outside_1_998_except_sentinel": 0,
+      "upb_nonpositive": 0,
+      "first_payment_bad_date": 0,
+      "loan_id_year_mismatch": 0,
+      "first_payment_after_24m_eligibility": 2
+    },
+    "2023": {
+      "score_outside_300_850_except_sentinel": 0,
+      "dti_outside_1_65_except_sentinel": 0,
+      "ltv_outside_1_998_except_sentinel": 0,
+      "upb_nonpositive": 0,
+      "first_payment_bad_date": 0,
+      "loan_id_year_mismatch": 0,
+      "first_payment_after_24m_eligibility": 36
+    }
+  },
+  "orig_duplicate_ids": {
+    "2021": 0,
+    "2022": 0,
+    "2023": 0
+  },
+  "perf_rows": {
+    "2021": 2537054,
+    "2022": 2034798,
+    "2023": 1458169
+  },
+  "perf_quality": {
+    "2021": {
+      "rows": 2537054,
+      "unmatched_loan_rows": 0,
+      "blank_reporting_month": 0,
+      "blank_status": 0,
+      "blank_current_upb": 0,
+      "negative_current_upb": 0,
+      "invalid_exit_code": 0,
+      "bad_reporting_date": 0,
+      "missing_first_payment_lookup": 0,
+      "age_before_first_scheduled_payment": 48325,
+      "unknown_status_rows": 0,
+      "numeric_status_zero_balance_or_nonpositive_upb": 9724,
+      "outside_24_month_window": 1394319
+    },
+    "2022": {
+      "rows": 2034798,
+      "unmatched_loan_rows": 0,
+      "blank_reporting_month": 0,
+      "blank_status": 0,
+      "blank_current_upb": 0,
+      "negative_current_upb": 0,
+      "invalid_exit_code": 0,
+      "bad_reporting_date": 0,
+      "missing_first_payment_lookup": 0,
+      "age_before_first_scheduled_payment": 48154,
+      "unknown_status_rows": 0,
+      "numeric_status_zero_balance_or_nonpositive_upb": 9957,
+      "outside_24_month_window": 887079
+    },
+    "2023": {
+      "rows": 1458169,
+      "unmatched_loan_rows": 0,
+      "blank_reporting_month": 0,
+      "blank_status": 0,
+      "blank_current_upb": 0,
+      "negative_current_upb": 0,
+      "invalid_exit_code": 0,
+      "bad_reporting_date": 0,
+      "missing_first_payment_lookup": 0,
+      "age_before_first_scheduled_payment": 47567,
+      "unknown_status_rows": 0,
+      "numeric_status_zero_balance_or_nonpositive_upb": 13223,
+      "outside_24_month_window": 349785
+    }
+  },
+  "status_counts": {
+    "2021": {
+      "00": 2509051,
+      "01": 16809,
+      "02": 3642,
+      "03": 1735,
+      "04": 1166,
+      "05": 985,
+      "06": 696,
+      "07": 522,
+      "11": 278,
+      "10": 323,
+      "08": 423,
+      "09": 358,
+      "12": 221,
+      "13": 167,
+      "15": 87,
+      "16": 65,
+      "14": 126,
+      "17": 48,
+      "18": 45,
+      "19": 38,
+      "20": 34,
+      "21": 29,
+      "22": 20,
+      "23": 17,
+      "24": 15,
+      "25": 9,
+      "26": 7,
+      "27": 7,
+      "28": 5,
+      "29": 6,
+      "30": 3,
+      "31": 3,
+      "32": 3,
+      "33": 2,
+      "34": 2,
+      "35": 2,
+      "36": 2,
+      "RA": 93,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 1
+    },
+    "2022": {
+      "00": 1993869,
+      "01": 21991,
+      "02": 5809,
+      "03": 2995,
+      "04": 2071,
+      "05": 1691,
+      "06": 1156,
+      "07": 917,
+      "08": 780,
+      "09": 639,
+      "10": 461,
+      "RA": 296,
+      "12": 380,
+      "11": 414,
+      "14": 220,
+      "13": 260,
+      "15": 175,
+      "16": 122,
+      "17": 105,
+      "18": 92,
+      "20": 63,
+      "28": 17,
+      "21": 45,
+      "22": 34,
+      "23": 25,
+      "19": 61,
+      "24": 25,
+      "25": 20,
+      "26": 16,
+      "27": 16,
+      "29": 15,
+      "30": 7,
+      "31": 6,
+      "32": 2,
+      "33": 1,
+      "34": 1,
+      "35": 1
+    },
+    "2023": {
+      "00": 1432950,
+      "01": 13167,
+      "02": 3529,
+      "03": 1783,
+      "04": 1261,
+      "05": 1075,
+      "06": 743,
+      "07": 603,
+      "08": 492,
+      "09": 420,
+      "10": 336,
+      "12": 237,
+      "11": 267,
+      "13": 201,
+      "RA": 327,
+      "14": 154,
+      "15": 118,
+      "16": 105,
+      "17": 85,
+      "18": 67,
+      "19": 55,
+      "20": 42,
+      "26": 10,
+      "22": 27,
+      "23": 24,
+      "24": 22,
+      "21": 35,
+      "25": 15,
+      "27": 7,
+      "29": 2,
+      "28": 4,
+      "30": 2,
+      "31": 2,
+      "32": 1,
+      "33": 1
+    }
+  },
+  "exit_code_counts": {
+    "2021": {
+      "": 2527324,
+      "01": 9583,
+      "96": 116,
+      "02": 11,
+      "16": 8,
+      "09": 6,
+      "15": 6
+    },
+    "2022": {
+      "": 2024818,
+      "01": 9657,
+      "96": 250,
+      "09": 20,
+      "16": 15,
+      "02": 24,
+      "15": 8,
+      "03": 6
+    },
+    "2023": {
+      "": 1444918,
+      "01": 12990,
+      "96": 209,
+      "03": 10,
+      "02": 10,
+      "09": 28,
+      "16": 1,
+      "15": 3
+    }
+  },
+  "orig_cross_year_duplicate_ids": 0,
+  "latest_reporting_month": "202603",
+  "perf_duplicate_keys_in_analysis_window": 0,
+  "within_window_internal_month_gaps": 0,
+  "observed_month_1_rows": 148408
+}

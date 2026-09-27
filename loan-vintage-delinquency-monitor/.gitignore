@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.sqlite
+*.sqlite-journal
+*.zip
+upload/
+.env
+.venv/
+output/test_write
